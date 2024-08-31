@@ -7,7 +7,7 @@ class Person:
 		return f'Firstname : {self.firstname}, Lastname : {self.lastname}'
 
 	def __str__(self):
-		pass
+		return f'{self.firstname} {self.lastname}'
 
 class Student(Person):
 
@@ -19,4 +19,4 @@ class Student(Person):
 
 
 p1 = Student("Nithin","Raj")
-print(p1.printname())
+print(p1)
